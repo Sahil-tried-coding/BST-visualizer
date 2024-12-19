@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Binary Search Tree Visualizer</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://kit.fontawesome.com/e8fbb55064.js" crossorigin="anonymous"></script>
+    <script src="./JS/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      Binary Search Tree Visualizer
+    </nav>
+    <div class="form-container">
+      <form id="form1">
+        <input type="text" id="insert" placeholder="Insert" inputmode="numeric" />
+        <button type="submit" id="insert-btn" class="btn">
+          <i class="fa-sharp fa-solid fa-plus"></i>
+        </button>
+      </form>
+      <form id="form2">
+        <input type="text" id="remove" placeholder="Remove" inputmode="numeric" />
+        <button type="submit" id="remove-btn" class="btn">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </form>
+      <form id="form3">
+        <input type="text" id="find" placeholder="Find" inputmode="numeric" />
+        <button type="submit" id="find-btn" class="btn">
+          <i class="fa-solid fa-search"></i>
+        </button>
+      </form>
+      <label for="animation-delay">Animation Delay</label>
+      <input type="range" min="50" max="1000" value="500" id="animation-delay" />
+      <div class="traversals">
+        <button id="pre" class="traversal" type="button">Preorder</button>
+        <button id="post" class="traversal" type="button">Postorder</button>
+        <button id="in" class="traversal" type="button">Inorder</button>
+        <button id="level" class="traversal" type="button">Level Order</button>
+      </div>
+      <div id="message"></div>
+    </div>
+  </body>
+</html>
